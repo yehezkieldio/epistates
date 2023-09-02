@@ -1,0 +1,16 @@
+{
+    "semi": true,
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "bracketSpacing": true,
+    "singleQuote": false,
+    "arrowParens": "always",
+    "quoteProps": "consistent",
+    "printWidth": 120,
+    "plugins": ["@trivago/prettier-plugin-sort-imports"],
+    "overrides": [{ "files": ["*.tsx"], "options": { "parser": "typescript" } }],
+    "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+    "importOrder": ["^@inertiajs/(.*)$", "^[./]"],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+}
