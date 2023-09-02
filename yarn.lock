@@ -46,7 +46,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.22.9":
+"@babel/core@npm:^7.21.0, @babel/core@npm:^7.22.9":
   version: 7.22.11
   resolution: "@babel/core@npm:7.22.11"
   dependencies:
@@ -80,7 +80,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.17.3, @babel/generator@npm:^7.22.10":
+"@babel/generator@npm:^7.17.3, @babel/generator@npm:^7.22.10, @babel/generator@npm:^7.22.7":
   version: 7.22.10
   resolution: "@babel/generator@npm:7.22.10"
   dependencies:
@@ -232,6 +232,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-syntax-jsx@npm:^7.21.4":
+  version: 7.22.5
+  resolution: "@babel/plugin-syntax-jsx@npm:7.22.5"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.22.5
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 8829d30c2617ab31393d99cec2978e41f014f4ac6f01a1cecf4c4dd8320c3ec12fdc3ce121126b2d8d32f6887e99ca1a0bad53dedb1e6ad165640b92b24980ce
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-syntax-typescript@npm:^7.21.4":
+  version: 7.22.5
+  resolution: "@babel/plugin-syntax-typescript@npm:7.22.5"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.22.5
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 8ab7718fbb026d64da93681a57797d60326097fd7cb930380c8bffd9eb101689e90142c760a14b51e8e69c88a73ba3da956cb4520a3b0c65743aee5c71ef360a
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-transform-react-jsx-self@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/plugin-transform-react-jsx-self@npm:7.22.5"
@@ -311,7 +333,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.17.0, @babel/types@npm:^7.22.10, @babel/types@npm:^7.22.11, @babel/types@npm:^7.22.5, @babel/types@npm:^7.8.3":
+"@babel/types@npm:^7.17.0, @babel/types@npm:^7.21.3, @babel/types@npm:^7.22.10, @babel/types@npm:^7.22.11, @babel/types@npm:^7.22.5, @babel/types@npm:^7.8.3":
   version: 7.22.11
   resolution: "@babel/types@npm:7.22.11"
   dependencies:
@@ -3183,6 +3205,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kleur@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "kleur@npm:4.1.5"
+  checksum: 1dc476e32741acf0b1b5b0627ffd0d722e342c1b0da14de3e8ae97821327ca08f9fb944542fb3c126d90ac5f27f9d804edbe7c585bf7d12ef495d115e0f22c12
+  languageName: node
+  linkType: hard
+
 "laravel-vite-plugin@npm:^0.8.0":
   version: 0.8.0
   resolution: "laravel-vite-plugin@npm:0.8.0"
@@ -3388,6 +3417,22 @@ __metadata:
     braces: ^3.0.2
     picomatch: ^2.3.1
   checksum: 02a17b671c06e8fefeeb6ef996119c1e597c942e632a21ef589154f23898c9c6a9858526246abb14f8bca6e77734aa9dcf65476fca47cedfb80d9577d52843fc
+  languageName: node
+  linkType: hard
+
+"million@npm:^2.6.0-beta.12":
+  version: 2.6.0-beta.12
+  resolution: "million@npm:2.6.0-beta.12"
+  dependencies:
+    "@babel/core": ^7.21.0
+    "@babel/generator": ^7.22.7
+    "@babel/plugin-syntax-jsx": ^7.21.4
+    "@babel/plugin-syntax-typescript": ^7.21.4
+    "@babel/types": ^7.21.3
+    kleur: ^4.1.5
+    rollup: ^3.28.0
+    unplugin: ^1.3.1
+  checksum: 5e8a4750ec8cd2dbd793c3a8608268b3b6b515e47df13f42727776daa6fc9b41523c13b5851ffe96e7b07855aeb89a66055d0d4f27fb33dfb80cca98338af023
   languageName: node
   linkType: hard
 
@@ -4287,7 +4332,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^3.27.1":
+"rollup@npm:^3.27.1, rollup@npm:^3.28.0":
   version: 3.28.1
   resolution: "rollup@npm:3.28.1"
   dependencies:
@@ -4325,6 +4370,7 @@ __metadata:
     eslint-plugin-unused-imports: ^3.0.0
     laravel-vite-plugin: ^0.8.0
     lint-staged: ^14.0.1
+    million: ^2.6.0-beta.12
     postcss: ^8.4.18
     prettier: ^3.0.3
     react: ^18.2.0
@@ -4952,6 +4998,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unplugin@npm:^1.3.1":
+  version: 1.4.0
+  resolution: "unplugin@npm:1.4.0"
+  dependencies:
+    acorn: ^8.9.0
+    chokidar: ^3.5.3
+    webpack-sources: ^3.2.3
+    webpack-virtual-modules: ^0.5.0
+  checksum: 49f586b07988397aa130b44710e8017a0472e825d08a218557031f08d694788b3ee61d686e67af153cb39b73132e2616c2f135222b83ff8aa2f7a89027f74600
+  languageName: node
+  linkType: hard
+
 "untildify@npm:^4.0.0":
   version: 4.0.0
   resolution: "untildify@npm:4.0.0"
@@ -5038,6 +5096,20 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: c511024ceae39c68c7dbf2ac4381ee655cd7bb62cf43867a14798bc835d3320b8fa7867a336143c30825c191c1fb4e9aa3348fce831ab617e96203080d3d2908
+  languageName: node
+  linkType: hard
+
+"webpack-sources@npm:^3.2.3":
+  version: 3.2.3
+  resolution: "webpack-sources@npm:3.2.3"
+  checksum: 989e401b9fe3536529e2a99dac8c1bdc50e3a0a2c8669cbafad31271eadd994bc9405f88a3039cd2e29db5e6d9d0926ceb7a1a4e7409ece021fe79c37d9c4607
+  languageName: node
+  linkType: hard
+
+"webpack-virtual-modules@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "webpack-virtual-modules@npm:0.5.0"
+  checksum: 22b59257b55c89d11ae295b588b683ee9fdf3aeb591bc7b6f88ac1d69cb63f4fcb507666ea986866dfae161a1fa534ad6fb4e2ea91bbcd0a6d454368d7d4c64b
   languageName: node
   linkType: hard
 
