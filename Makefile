@@ -19,7 +19,7 @@ compose-up:
 
 # Stop Docker Compose
 compose-down:
-	docker-compose down -f ./docker/docker-compose.yml
+	docker-compose -f ./docker/docker-compose.yml down
 
 # -- DOCKER
 
